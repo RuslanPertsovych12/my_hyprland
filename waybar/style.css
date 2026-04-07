@@ -1,0 +1,37 @@
+* {
+    font-family: JetBrainsMono Nerd Font;
+    font-size: 14px;
+}
+
+window#waybar {
+    background: rgba(20, 20, 20, 0.85);
+    color: #ffffff;
+}
+
+#clock {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#custom-power {
+    padding: 0 14px;
+    font-size: 18px;
+}
+
+#custom-power:hover {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+/* Загальні відступи для всіх модулів */
+#waybar > box > widget {
+  margin: 0 10px;
+}
+
+/* Або точково */
+#battery {
+  padding: 0 12px;
+}
+
+#clock {
+  padding: 0 12px;
+}

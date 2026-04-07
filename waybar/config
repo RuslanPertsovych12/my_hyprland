@@ -1,0 +1,33 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 36,
+
+  "modules-left": [],
+  "modules-center": ["clock"],
+  "modules-right": ["battery", "custom/power"],
+
+  "clock": {
+    "format": "{:%H:%M}",
+    "tooltip-format": "{:%A, %d %B %Y}"
+  },
+
+  "battery": {
+    "bat": "CMB1",
+    "interval": 30,
+    "states": {
+      "warning": 30,
+      "critical": 15
+    },
+    "format": "{capacity}%",
+    "format-charging": " {capacity}%",
+    "format-plugged": " {capacity}%",
+    "format-alt": "{time}"
+  },
+
+  "custom/power": {
+    "format": "⏻",
+    "tooltip": "Power",
+    "on-click": "wlogout"
+  }
+}
